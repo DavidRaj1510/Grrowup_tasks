@@ -1,0 +1,94 @@
+/* Applying Poppins font from Google Fonts */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+header {
+    margin-top: 3px;
+}
+
+.profile-header {
+    width: 100%;
+    max-width: 1200px;
+    border: 1px solid #e0e0e0; /* Light grey border similar to Facebook */
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px; /* Slightly rounded corners */
+    overflow: hidden; /* Ensure no overflow from children */
+}
+
+.cover-photo img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border: none;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    padding: 35px;
+    background-color: #fff;
+    position: relative; /* For any absolutely positioned elements */
+}
+
+.profile-picture {
+    position: relative;
+    margin-right: 20px;
+    border: 1px solid #fff; /* White border around profile picture */
+    border-radius: 50%; /* Make sure it's circular */
+    overflow: hidden; /* Hide overflow if image is larger */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+}
+
+.profile-picture img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #1877f2; /* Facebook blue border */
+}
+
+.profile-picture:hover {
+    transform: scale(1.2);
+}
+
+.user-info {
+    margin-left: 15px;
+}
+
+.user-info h1 {
+    margin: 0;
+    font-size: 28px; /* Increased font size */
+    color: #1c1e21; /* Dark color for text */
+    font-weight: 600; /* Bold font */
+}
+
+.user-info p {
+    margin: 8px 0 0;
+    color: #606770; /* Grey color for text */
+    font-size: 16px; /* Slightly increased font size */
+}
+
+.user-info h1:hover, .user-info p:hover {
+    text-decoration: underline;
+    text-underline-offset: 2.5px;
+    color: #1877f2; /* Facebook blue color on hover */
+    cursor: default;
+}
+
+/* Adding a slight background gradient */
+.profile-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    z-index: -1; /* Place behind the content */
+}
