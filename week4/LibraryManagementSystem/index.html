@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Library Management System</h1>
+        <div class="form-container">
+            <h2>Add a Book</h2>
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+            <input type="number" id="pages" placeholder="Pages">
+            <div id="genre-selection">
+                <label>
+                    <input type="checkbox" name="genre" value="Fiction"> Fiction
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="Non-Fiction"> Non-Fiction
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="Mystery"> Mystery
+                </label>
+                <label>
+                    <input type="checkbox" name="genre" value="Sci-Fi"> Sci-Fi
+                </label>
+            </div>
+            <button id="add-book-btn" class="btn">Add Book</button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Search by Title">
+            <button id="search-btn" class="btn">Search</button>
+        </div>
+        <div id="message"></div>
+        <div id="book-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

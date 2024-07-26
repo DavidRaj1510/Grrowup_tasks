@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Employee Management System</h1>
+        <div class="buttons">
+            <button id="average-salary-btn" class="btn">Calculate Average Salary</button>
+            <div id="department-selection">
+                <label>
+                    <input type="checkbox" name="department" value="HR"> HR
+                </label>
+                <label>
+                    <input type="checkbox" name="department" value="IT"> IT
+                </label>
+                <button id="department-btn" class="btn">Find Employees in Department</button>
+            </div>
+            <button id="increase-salary-btn" class="btn">Increase Salary</button>
+            <button id="sort-age-btn" class="btn">Sort by Age</button>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
